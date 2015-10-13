@@ -17,12 +17,16 @@
 \useoutertheme{shadow}
 
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[circle]
 
 \definecolor{EpamBlue}{HTML}{006699}
 \definecolor{EpamPink}{HTML}{FF3366}
 \definecolor{EpamAzure}{HTML}{3F9ABF}
 \definecolor{Epam4box}{HTML}{7EBBD4}
 \definecolor{EpamBlueLight}{HTML}{BFDDE9}
+\definecolor{EpamGraphite}{HTML}{464547}
+\definecolor{EpamSharpBlue}{HTML}{39C2D7}
+\definecolor{EpamLimeGreen}{HTML}{A3C644}
 
 
 \setbeamercolor*{lineup}{parent=palette primary}
@@ -35,12 +39,12 @@
 \setbeamercolor{epamline4}{fg=black,bg=Epam4box}
 \setbeamercolor{epamline5}{fg=black,bg=EpamBlueLight}
 
-\setbeamercolor{epamlinestring}{fg=EpamBlue,bg=white}
+\setbeamercolor{epamlinestring}{fg=white,bg=EpamGraphite}
 
 % system colors redefination
-\setbeamercolor{structure}{fg=EpamBlue}
-\setbeamercolor{frametitle}{bg=EpamBlue}
-\setbeamercolor{frametitle right}{bg=EpamBlueLight}
+\setbeamercolor{structure}{fg=EpamSharpBlue}
+\setbeamercolor{frametitle}{fg=EpamGraphite,bg=white}
+\setbeamercolor{frametitle right}{bg=white}
 
 
 
@@ -65,50 +69,52 @@
 {
   \leavevmode%
   % First line.
-  \hbox{%
-  \begin{beamercolorbox}[wd=.05\paperwidth,ht=\beamer@decolines@lineup,dp=0pt]{epamline1}%
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.10\paperwidth,ht=\beamer@decolines@lineup,dp=0pt]{epamline2}%
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.16\paperwidth,ht=\beamer@decolines@lineup,dp=0pt]{epamline3}%
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.26\paperwidth,ht=\beamer@decolines@lineup,dp=0pt]{epamline4}%
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.43\paperwidth,ht=\beamer@decolines@lineup,dp=0pt]{epamline5}%
-  \end{beamercolorbox}%
-  } %
+  %\hbox{%
+%  \begin{beamercolorbox}[wd=.05\paperwidth,ht=\beamer@decolines@lineup,dp=0pt]{epamline1}%
+%  \end{beamercolorbox}%
+ % \begin{beamercolorbox}[wd=.10\paperwidth,ht=\beamer@decolines@lineup,dp=0pt]{epamline2}%
+ % \end{beamercolorbox}%
+ % \begin{beamercolorbox}[wd=.16\paperwidth,ht=\beamer@decolines@lineup,dp=0pt]{epamline3}%
+ % \end{beamercolorbox}%
+ % \begin{beamercolorbox}[wd=.26\paperwidth,ht=\beamer@decolines@lineup,dp=0pt]{epamline4}%
+ % \end{beamercolorbox}%
+ % \begin{beamercolorbox}[wd=.13\paperwidth,ht=\beamer@decolines@lineup,dp=0pt]{epamline5}%
+ % \end{beamercolorbox}%
+ % } %
   % Second line.
   \hbox{%
-  \begin{beamercolorbox}[wd=.15\paperwidth,ht=\beamer@decolines@linemid,dp=0pt,right]{epamlinestring}%
+  \begin{beamercolorbox}[wd=.15\paperwidth,ht=\beamer@decolines@linemid,dp=10pt,center]{epamlinestring}%
     \small{<}\large{epam}\small{>}
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.01\paperwidth,ht=\beamer@decolines@linemid,dp=0pt,right]{epamlinestring}%
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.6\paperwidth,ht=\beamer@decolines@linemid,dp=0pt,left]{epamlinestring}%
+  %\begin{beamercolorbox}[wd=.01\paperwidth,ht=\beamer@decolines@linemid,dp=10pt,right]{epamlinestring}%
+  %\end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.6\paperwidth,ht=\beamer@decolines@linemid,dp=10pt,left]{epamlinestring}%
     \vspace*{\fill}
 
-    \tiny{Excellence in Software Engineering}
+    \tiny{confidential}
 
     \vspace*{\fill}
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.2\paperwidth,ht=\beamer@decolines@linemid,dp=0pt,right]{epamlinestring}%
+  \begin{beamercolorbox}[wd=.25\paperwidth,ht=\beamer@decolines@linemid,dp=10pt,right]{epamlinestring}%
     \hbox{\usebeamerfont{palette primary}\footnotesize\insertframenumber{} \beamer@decolines@pageofpages{} \inserttotalframenumber\hspace*{2ex}}%
   \end{beamercolorbox}%
   } %
   % Third line.
-  \hbox{%
-  \begin{beamercolorbox}[wd=\paperwidth,ht=\beamer@decolines@linebottom,dp=0pt]{}%
-  \end{beamercolorbox}%
-  } %
+ % \hbox{%
+ % \begin{beamercolorbox}[wd=\paperwidth,ht=\beamer@decolines@linebottom,dp=0pt]{}%
+ % \end{beamercolorbox}%
+ % } %
 }
 
 % colors for headline
+\setbeamercolor{section in head/foot}{fg=EpamLimeGreen}
+\setbeamercolor{section in head/foot shaded}{fg=EpamGraphite}
 % headline
 \setbeamertemplate{headline}{%
 \leavevmode%
   \hbox{%
-    \begin{beamercolorbox}[wd=\paperwidth,ht=\beamer@decolines@headline,dp=1.125ex]{epamline2}%
     \insertsectionnavigationhorizontal{\paperwidth}{}{\hskip0pt plus1filll}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=\beamer@decolines@headline,dp=1.125ex]{epamline2}%
     \end{beamercolorbox}%
   }
 }
